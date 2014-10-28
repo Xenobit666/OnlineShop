@@ -22,9 +22,9 @@ public class ProductDAO {
 			
 			resultSet.next();
 			product.setProduct_id(product_id);
-            product.setProduct_name(resultSet.getString("product_name"));
-            product.setCategory_id(resultSet.getInt("category_id"));
-            product.setPrice(resultSet.getInt("price"));
+			product.setProduct_name(resultSet.getString("product_name"));
+			product.setCategory_id(resultSet.getInt("category_id"));
+			product.setPrice(resultSet.getInt("price"));
 		} catch (SQLException e) {
 			logger.error("No such product, id=" + product_id,e);
 			e.printStackTrace();
