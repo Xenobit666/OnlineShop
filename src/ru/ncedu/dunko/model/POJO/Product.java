@@ -8,9 +8,8 @@ public class Product {
 	
 	public Product() {}
 	
-	public Product(int product_id, int category_id, String product_name, int price ) {
+	public Product(int product_id, String product_name, int price ) {
 		this.product_id = product_id;
-		this.category_id = category_id;
 		this.product_name = product_name;
 		this.price = price;
 	} 

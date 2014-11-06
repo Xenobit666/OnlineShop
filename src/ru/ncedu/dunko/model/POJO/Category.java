@@ -7,10 +7,9 @@ public class Category {
 	
 	public Category() {}
 	
-	public Category(int category_id, String category_name, int main_category_id) {
+	public Category(int category_id, String category_name) {
 		this.category_id = category_id;
 		this.category_name = category_name;
-		this.main_category_id = main_category_id;
 	}
 	
 	public int getCategory_id() {

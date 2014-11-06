@@ -1,10 +1,13 @@
 package ru.ncedu.dunko;
 
+import ru.ncedu.dunko.controller.*;
+
 public class MainOS {
 
 	public static void main(String[] args) {
-	System.out.println("Start");
-
+		Controller controller = new Controller();
+		while (true) {
+			controller.parseCommand();
+		}		
 	}
-
 }
